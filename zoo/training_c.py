@@ -45,7 +45,7 @@ class Training(object):
     # Training
     ###
 
-    def compile(self, loss='categorical_crossentropy', optimizer=Adam(lr=0.001, decay=1e-5), metrics=['acc']):
+    def compile(self, loss='categorical_crossentropy', optimizer=Adam(learning_rate=0.001, decay=1e-5), metrics=['acc']):
         """ Compile the model for training
             loss     : the loss function
             optimizer: the optimizer
